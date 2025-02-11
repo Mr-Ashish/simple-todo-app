@@ -24,7 +24,9 @@ const TodoItem = React.memo((props) => {
         checked={completed}
         onChange={() => handleCheckBoxClick(id)}
       />
-      <button onClick={() => deleteTodoProps(id)}>Delete</button>
+      <button id={`${todo.title}`} onClick={() => deleteTodoProps(id)}>
+        Delete
+      </button>
       <span style={completed ? completedStyle : null}>{title}</span>
       <span className="assignedUser">-{user ? user.name : "unassigned"}</span>
       <select

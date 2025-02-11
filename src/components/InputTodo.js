@@ -27,9 +27,11 @@ const InputTodo = React.memo((props) => {
   return (
     <form onSubmit={handleSubmit} className="form-container">
       <input
+        id="add_todo"
         type="text"
         className="input-text"
         placeholder="Add todo..."
+        data-test-id="Add todo"
         value={title}
         name="title"
         onChange={onTitleChange}
@@ -47,7 +49,12 @@ const InputTodo = React.memo((props) => {
           </option>
         ))}
       </select>
-      <input type="submit" className="input-submit" value="Submit" />
+      <input
+        type="submit"
+        className="input-submit"
+        value="Submit"
+        id="submit"
+      />
     </form>
   );
 });
