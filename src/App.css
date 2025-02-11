@@ -58,3 +58,9 @@ body {
   float: right;
   outline: none;
 }
+.assignedUser {
+  margin-left: 16px;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+}
