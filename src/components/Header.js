@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = () => {
+const Header = React.memo(() => {
   const headerStyle = {
     padding: "20px 0",
-    lineHeight: "2em"
+    lineHeight: "2em",
   };
   return (
     <header style={headerStyle}>
@@ -15,6 +15,6 @@ const Header = () => {
       </p>
     </header>
   );
-};
+});
 
 export default Header;
